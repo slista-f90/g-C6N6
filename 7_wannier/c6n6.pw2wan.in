@@ -1,0 +1,9 @@
+!Interface between Quantum ESPRESSO and Wannier90 input file
+&inputpp
+outdir='./tmp'
+prefix = 'c6n6'
+seedname = 'c6n6'
+spin_component = 'none'
+write_mmn = .true.
+write_amn = .true.
+/

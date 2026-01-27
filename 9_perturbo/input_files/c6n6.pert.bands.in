@@ -1,0 +1,5 @@
+&perturbo
+ prefix = 'c6n6'
+ calc_mode = 'bands'
+ fklist = 'c6n6_bands.kpt'
+/

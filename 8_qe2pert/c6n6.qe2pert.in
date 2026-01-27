@@ -1,0 +1,11 @@
+&qe2pert
+prefix='c6n6'
+outdir='./tmp'
+phdir='/leonardo_work/IscrC_ASPECT/second_try_c6n6/6_phonons/save'
+nk1=9, nk2=9, nk3=1
+dft_band_min = 24
+dft_band_max = 31
+num_wann = 8
+lwannier=.true.
+system_2d = .true.
+/

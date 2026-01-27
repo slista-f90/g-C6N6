@@ -1,0 +1,31 @@
+&perturbo
+prefix = 'c6n6'
+calc_mode = 'trans-rta'
+
+find_efermi = .false.
+
+!For valence bands transport calculation only
+!hole = .true.
+
+
+!In the CBM
+boltz_kdim(1) = 60
+boltz_kdim(2) = 60
+boltz_kdim(3) = 1
+boltz_emin = -5.4
+boltz_emax = -4.3408
+band_min = 5, band_max = 5
+
+
+!For Conduction Dirac Cones
+!boltz_kdim(1) = 180
+!boltz_kdim(2) = 180
+!boltz_kdim(3) = 1
+!boltz_emin = -3.6179
+!boltz_emax = -3.0179
+!band_min = 7, band_max = 7
+
+
+ftemper = 'c6n6.temper'
+boltz_nstep = 0
+/

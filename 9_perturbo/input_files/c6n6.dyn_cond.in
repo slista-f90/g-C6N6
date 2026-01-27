@@ -1,0 +1,59 @@
+&perturbo
+prefix      = 'c6n6'
+calc_mode   = 'dynamics-run'
+
+!hole = .true.
+
+!CBM
+!boltz_kdim(1) = 100
+!boltz_kdim(2) = 100
+!boltz_kdim(3) = 1
+!boltz_emin = -5.0
+!boltz_emax = -4.0
+!band_min = 5
+!band_max = 5
+
+!VBM
+!boltz_kdim(1) = 90
+!boltz_kdim(2) = 90
+!boltz_kdim(3) = 1
+!boltz_emin = -6.295
+!boltz_emax = -5.3
+!band_min = 4, band_max = 4
+
+!For Conduction bands
+boltz_kdim(1) = 240
+boltz_kdim(2) = 240
+boltz_kdim(3) = 1
+boltz_emin = -3.500
+boltz_emax = -2.000
+!boltz_emax = -1.130
+band_min = 6, band_max = 7
+
+!For Valence bands
+!boltz_kdim(1) = 90
+!boltz_kdim(2) = 90
+!boltz_kdim(3) = 1
+!boltz_emin = -7.25
+!boltz_emax = -6.00
+!band_min = 2, band_max = 4
+
+ ftemper  = 'c6n6.temper'
+
+ !time_step   = 0.5 !fs
+ !boltz_nstep = 51
+ time_step   = 2.5 !fs
+ boltz_nstep = 11
+ !output_nstep = 2
+ solver = 'rk4'
+
+ boltz_init_dist = 'gaussian'
+ boltz_init_e0 = -2.650 ! eV
+ !boltz_init_e0 = -3.400 ! eV
+ !boltz_init_e0 = -4.090 ! eV
+ boltz_init_smear = 10 !meV
+
+ tmp_dir = "./tmp"
+ phfreq_cutoff = 1 ! meV
+ delta_smear = 5 ! meV
+/

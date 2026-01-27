@@ -1,0 +1,12 @@
+&inputph
+tr2_ph=1.0d-18,
+ldisp=.true.,
+epsil=.true.,
+nq1=9, nq2=9, nq3=1
+prefix='c6n6',
+outdir='./tmp',
+asr = .true.
+fildyn='c6n6.dyn.xml',
+search_sym= .false.
+fildvscf = 'dvscf'
+/

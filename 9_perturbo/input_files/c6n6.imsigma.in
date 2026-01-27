@@ -1,0 +1,25 @@
+!Calculation of the imaginary part of the electron-phonon self-energy
+
+&perturbo
+prefix = 'c6n6'
+calc_mode = 'imsigma'
+
+phfreq_cutoff = 1 !meV
+delta_smear = 5 !meV
+
+ftemper = 'c6n6.temper'
+fklist = 'c6n6_tet.kpt'
+
+nsamples = 1000000
+sampling = 'cauchy'
+cauchy_scale = 0.05
+
+!In the CBM
+!band_min = 5, band_max = 7
+
+!For Conduction Dirac Cones
+!band_min = 7, band_max = 7
+
+!In the VBM
+band_min = 1, band_max = 4
+/

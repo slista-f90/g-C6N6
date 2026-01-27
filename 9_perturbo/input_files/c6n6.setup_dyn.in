@@ -1,0 +1,47 @@
+!Setup input file
+
+&perturbo
+prefix = 'c6n6'
+calc_mode = 'setup'
+
+find_efermi = .false.
+
+!For valence bands transport calculation only
+!hole = .true.
+
+!In the CBM
+!boltz_kdim(1) = 100
+!boltz_kdim(2) = 100
+!boltz_kdim(3) = 1
+!boltz_emin = -5.0
+!boltz_emax = -4.0
+!band_min = 5, band_max = 5
+
+!In the VBM
+!boltz_kdim(1) = 90
+!boltz_kdim(2) = 90
+!boltz_kdim(3) = 1
+!boltz_emin = -6.295
+!boltz_emax = -5.3
+!band_min = 4, band_max = 4
+
+!For Conduction bands
+boltz_kdim(1) = 240
+boltz_kdim(2) = 240
+boltz_kdim(3) = 1
+boltz_emin = -3.500
+boltz_emax = -2.000
+!boltz_emax = -1.130
+band_min = 6, band_max = 7
+
+!For Valence bands
+!boltz_kdim(1) = 90
+!boltz_kdim(2) = 90
+!boltz_kdim(3) = 1
+!boltz_emin = -7.25
+!boltz_emax = -6.00
+!band_min = 2, band_max = 4
+
+ftemper = 'c6n6.temper'
+/
+

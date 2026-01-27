@@ -1,0 +1,11 @@
+&perturbo
+ prefix = 'c6n6'
+ calc_mode = 'ephmat'
+ fklist = 'c6n6_bands.kpt'
+ fqlist = 'c6n6_bands.kpt'
+
+ band_min = 5
+ band_max = 5
+
+ phfreq_cutoff = 1   !meV
+/
