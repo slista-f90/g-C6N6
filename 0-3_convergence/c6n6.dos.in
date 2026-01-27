@@ -1,0 +1,7 @@
+&dos
+   outdir='./tmp'
+   prefix='c6n6'
+   fildos='c6n6.dos.dat',
+   degauss=0.01
+   Emin=-15.0, Emax=4.0, DeltaE=0.02
+ /
